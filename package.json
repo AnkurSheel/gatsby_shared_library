@@ -1,6 +1,6 @@
 {
     "name": "@codinators/gatsby-shared-library",
-    "version": "1.0.0",
+    "version": "0.0.0-semantically-released",
     "description": "Shared components for gatsby blogs",
     "main": "index.tsx",
     "repository": "https://github.com/AnkurSheel/gatsby_shared_library.git",
@@ -12,7 +12,8 @@
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
         "lint:fix": "yarn lint --fix",
         "storybook": "SET NODE_ENV=production& start-storybook -s public",
-        "build-storybook": "SET NODE_ENV=production & build-storybook -s public"
+        "build-storybook": "SET NODE_ENV=production & build-storybook -s public",
+        "semantic-release": "semantic-release"
     },
     "dependencies": {
         "@emotion/core": "^10.0.17",
@@ -50,7 +51,7 @@
         "lint-staged": "^9.2.5",
         "prettier": "^1.18.2",
         "react-docgen-typescript-loader": "^3.2.0",
-        "semantic-release-cli": "^5.2.1",
+        "semantic-release": "^15.13.24",
         "typescript": "^3.6.3",
         "yalc": "^1.0.0-pre.34"
     },
