@@ -12,7 +12,7 @@
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
         "lint:fix": "yarn lint --fix",
         "storybook": "SET NODE_ENV=production& start-storybook -s public",
-        "build-storybook": "SET NODE_ENV=production & build-storybook -s public",
+        "build-storybook": "SET NODE_ENV=production& build-storybook -s public",
         "semantic-release": "semantic-release",
         "commit": "yarn git-cz"
     },
