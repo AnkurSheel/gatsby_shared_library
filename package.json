@@ -13,7 +13,8 @@
         "lint:fix": "yarn lint --fix",
         "storybook": "SET NODE_ENV=production& start-storybook -s public",
         "build-storybook": "SET NODE_ENV=production & build-storybook -s public",
-        "semantic-release": "semantic-release"
+        "semantic-release": "semantic-release",
+        "commit": "yarn git-cz"
     },
     "dependencies": {
         "@emotion/core": "^10.0.17",
@@ -39,6 +40,8 @@
         "@typescript-eslint/eslint-plugin": "^2.2.0",
         "@typescript-eslint/parser": "^2.2.0",
         "babel-loader": "^8.0.6",
+        "commitizen": "^4.0.3",
+        "cz-conventional-changelog": "^3.0.2",
         "eslint": "^6.4.0",
         "eslint-config-airbnb": "^18.0.1",
         "eslint-config-prettier": "^6.3.0",
