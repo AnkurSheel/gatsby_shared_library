@@ -3,7 +3,7 @@
         "target": "es2015",
         "module": "esnext",
         "reactNamespace": "React",
-        "jsx": "preserve",
+        "jsx": "react",
         "outDir": "./lib",
         "resolveJsonModule": true,
         "moduleResolution": "node",
