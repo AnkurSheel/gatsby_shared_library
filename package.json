@@ -1,6 +1,6 @@
 {
     "name": "@codinators/gatsby-shared-library",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Shared components for gatsby blogs",
     "main": "lib/index.js",
     "repository": "https://github.com/AnkurSheel/gatsby_shared_library.git",
