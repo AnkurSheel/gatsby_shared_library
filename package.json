@@ -2,11 +2,14 @@
     "name": "@codinators/gatsby-shared-library",
     "version": "0.0.0-semantically-released",
     "description": "Shared components for gatsby blogs",
-    "main": "index.tsx",
+    "main": "lib/index.js",
     "repository": "https://github.com/AnkurSheel/gatsby_shared_library.git",
     "author": "Ankur Sheel <ankur.sheel@gmail.com>",
     "license": "MIT",
     "private": false,
+    "files": [
+        "lib"
+    ],
     "scripts": {
         "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
@@ -14,7 +17,8 @@
         "storybook": "SET NODE_ENV=production& start-storybook -s public",
         "build-storybook": "SET NODE_ENV=production& build-storybook -s public",
         "semantic-release": "semantic-release",
-        "commit": "yarn git-cz"
+        "commit": "yarn git-cz",
+        "build": "rimraf ./lib && tsc"
     },
     "dependencies": {
         "@emotion/core": "^10.0.17",
@@ -56,6 +60,7 @@
         "lint-staged": "^9.2.5",
         "prettier": "^1.18.2",
         "react-docgen-typescript-loader": "^3.2.0",
+        "rimraf": "^3.0.0",
         "semantic-release": "^15.13.24",
         "typescript": "^3.6.3",
         "yalc": "^1.0.0-pre.34"

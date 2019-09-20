@@ -9,7 +9,7 @@ module.exports = {
             '@semantic-release/git',
             {
                 assets: ['package.json', 'CHANGELOG.md'],
-                message: 'chore(New Release): Version ${nextRelease.version} \n\n${nextRelease.notes}', // eslint-disable-line no-template-curly-in-string
+                message: 'chore(New Release): Version ${nextRelease.version} \n\n${nextRelease.notes} [skip ci]', // eslint-disable-line no-template-curly-in-string
             },
         ],
     ],
