@@ -2,15 +2,17 @@
     "compilerOptions": {
         "target": "es2015",
         "module": "esnext",
-        "reactNamespace": "React",
         "jsx": "react",
-        "outDir": "./lib",
         "resolveJsonModule": true,
         "moduleResolution": "node",
         "esModuleInterop": true,
         "skipLibCheck": true,
         "declaration": true,
+        "emitDeclarationOnly": true,
         "declarationMap": true,
+        "declarationDir": "./lib/types",
+        "baseUrl": ".",
+        "outDir": "./lib",
         "noImplicitAny": true,
         "noLib": false,
         "strict": true,
@@ -20,11 +22,10 @@
         "noImplicitReturns": true,
         "noUnusedParameters": true,
         "pretty": true,
-        "baseUrl": ".",
         "paths": {
             "*": ["node_modules"]
         }
     },
-    "include": ["./src/**/*", "./*.ts"],
+    "include": ["./src/**/*"],
     "exclude": ["**/*.stories.tsx", "node_modules"]
 }

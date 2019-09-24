@@ -3,6 +3,7 @@
     "version": "1.1.2",
     "description": "Shared components for gatsby blogs",
     "main": "lib/index.js",
+    "module": "lib/index.js",
     "repository": "https://github.com/AnkurSheel/gatsby_shared_library.git",
     "author": "Ankur Sheel <ankur.sheel@gmail.com>",
     "license": "MIT",
@@ -10,15 +11,19 @@
     "files": [
         "lib"
     ],
+    "types": "./lib/types/index.d.ts",
     "scripts": {
+        "prebuild": "rimraf ./lib/*",
+        "build": "cross-env-shell npm-run-all --parallel types compile",
+        "types": "tsc",
+        "compile": "cross-env BABEL_ENV=esmodules babel --root-mode upward src --out-dir lib --extensions \".ts,.tsx\"",
         "format": "prettier --write src/**/*.{js,jsx,ts,tsx}",
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
         "lint:fix": "yarn lint --fix",
-        "storybook": "SET NODE_ENV=production& start-storybook -s public",
-        "build-storybook": "SET NODE_ENV=production& build-storybook -s public",
+        "storybook": "cross-env BABEL_ENV=storybook start-storybook -s public",
+        "build-storybook": "cross-env BABEL_ENV=storybook build-storybook -s public",
         "semantic-release": "semantic-release",
-        "commit": "yarn git-cz",
-        "build": "rimraf ./lib && tsc"
+        "commit": "yarn git-cz"
     },
     "dependencies": {
         "@emotion/core": "^10.0.17",
@@ -30,7 +35,11 @@
         "ts-optchain": "^0.1.8"
     },
     "devDependencies": {
-        "@babel/core": "^7.6.0",
+        "@babel/cli": "^7.6.2",
+        "@babel/core": "^7.6.2",
+        "@babel/plugin-proposal-class-properties": "^7.5.5",
+        "@babel/preset-react": "^7.0.0",
+        "@babel/preset-typescript": "^7.6.0",
         "@emotion/babel-preset-css-prop": "^10.0.17",
         "@semantic-release/changelog": "^3.0.4",
         "@semantic-release/git": "^7.0.16",
@@ -47,6 +56,7 @@
         "@typescript-eslint/parser": "^2.2.0",
         "babel-loader": "^8.0.6",
         "commitizen": "^4.0.3",
+        "cross-env": "^6.0.0",
         "cz-conventional-changelog": "^3.0.2",
         "eslint": "^6.4.0",
         "eslint-config-airbnb": "^18.0.1",
@@ -58,6 +68,7 @@
         "eslint-plugin-react-hooks": "^2.0.1",
         "husky": "^3.0.5",
         "lint-staged": "^9.2.5",
+        "npm-run-all": "^4.1.5",
         "prettier": "^1.18.2",
         "react-docgen-typescript-loader": "^3.2.0",
         "rimraf": "^3.0.0",
