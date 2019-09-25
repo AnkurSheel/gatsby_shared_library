@@ -19,6 +19,9 @@ jobs:
           - script: npm run build
             displayName: Build Package
 
+          - script: npm run test
+            displayName: Unit Tests
+
           - script: npm run semantic-release
             displayName: Version and Tag
             env:
