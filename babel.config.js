@@ -23,6 +23,7 @@ module.exports = {
     },
     ignore: [
         '**/__tests__', // ignore all test directories leave this up to ts-jest
+        '**/*.spec.tsx',
         '**/node_modules',
     ],
 };
