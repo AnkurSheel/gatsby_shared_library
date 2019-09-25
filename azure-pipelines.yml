@@ -13,17 +13,17 @@ jobs:
             inputs:
                 versionSpec: 10.x
 
-          - script: npm install
+          - script: yarn install
             displayName: Install dependencies
 
-          - script: npm run build
+          - script: yarn build
             displayName: Build Package
 
-          - script: npm run test
+          - script: yarn test
             displayName: Unit Tests
 
-          - script: npm run semantic-release
+          - script: yarn semantic-release
             displayName: Version and Tag
             env:
                 GH_TOKEN: $(gh.token)
-                NPM_TOKEN: $(npm.token)
+                yarn_TOKEN: $(yarn.token)
