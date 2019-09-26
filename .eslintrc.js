@@ -7,6 +7,7 @@ module.exports = {
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
         'prettier/react',
+        'plugin:jest/recommended',
     ],
     settings: {
         react: {
@@ -38,6 +39,7 @@ module.exports = {
                 extensions: ['jsx', 'tsx'],
             },
         ],
+        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.stories.tsx', '**/*.spec.tsx'] }],
     },
     overrides: [
         // Override some TypeScript rules just for .js files
