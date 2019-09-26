@@ -22,6 +22,12 @@ jobs:
           - script: yarn test
             displayName: Unit Tests
 
+          - task: PublishTestResults@2
+            condition: succeededOrFailed()
+            inputs:
+                testRunner: JUnit
+                testResultsFiles: 'TEST-RESULTS.xml'
+
           - script: yarn semantic-release
             displayName: Version and Tag
             env:
