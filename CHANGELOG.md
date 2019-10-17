@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.1.3...v1.2.0) (2019-10-17)
+
+
+### Features
+
+* add seo component ([4e4459c](https://github.com/AnkurSheel/gatsby_shared_library/commit/4e4459c))
+
 ## [1.1.3](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.1.2...v1.1.3) (2019-09-24)
 
 
