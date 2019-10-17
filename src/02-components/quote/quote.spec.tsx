@@ -1,8 +1,7 @@
 import React from 'react';
 import { axe } from 'jest-axe';
-import 'jest-axe/extend-expect';
 import { render } from '@testing-library/react';
-import Quote from '..';
+import Quote from '.';
 
 describe('<Quote />', () => {
     const quote = 'Test Quote here';
