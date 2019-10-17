@@ -13,7 +13,6 @@
     ],
     "types": "./lib/types/index.d.ts",
     "scripts": {
-        "postinstall": "yarn deduplicate --list && yarn deduplicate",
         "prebuild": "rimraf ./lib/*",
         "build": "cross-env-shell npm-run-all --parallel types compile",
         "types": "tsc",
@@ -25,7 +24,7 @@
         "build-storybook": "cross-env BABEL_ENV=storybook build-storybook -s public",
         "semantic-release": "semantic-release",
         "commit": "yarn git-cz",
-        "deduplicate": "yarn-deduplicate",
+        "deduplicate": "yarn-deduplicate --list && yarn-deduplicate",
         "test": "jest",
         "test:watch": "jest --watch"
     },
