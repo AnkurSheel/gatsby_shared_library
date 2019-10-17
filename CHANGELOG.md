@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.2.0...v1.2.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* fix for deduplicate failing on installing package ([ddeaa63](https://github.com/AnkurSheel/gatsby_shared_library/commit/ddeaa63))
+
 # [1.2.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.1.3...v1.2.0) (2019-10-17)
 
 
