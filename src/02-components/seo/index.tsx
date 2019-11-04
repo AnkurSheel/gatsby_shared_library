@@ -20,6 +20,11 @@ const SEO = (props: SEOProps) => {
             <meta name="description" content={description} />
             <link rel="canonical" href={url} />
 
+            {/* Google / Search Engine Tags */}
+            <meta itemProp="name" content={title} />
+            <meta itemProp="description" content={description} />
+            <meta itemProp="image" content={imageFacebook} />
+
             {/* OpenGraph tags */}
             <meta property="og:url" content={url} />
             <meta property="og:type" content={isBlog ? 'article' : 'website'} />
