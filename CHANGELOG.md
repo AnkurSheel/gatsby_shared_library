@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.2.1...v1.3.0) (2019-11-04)
+
+
+### Features
+
+* add google/search engine tags for seo ([28b4e3e](https://github.com/AnkurSheel/gatsby_shared_library/commit/28b4e3e))
+
 ## [1.2.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.2.0...v1.2.1) (2019-10-17)
 
 
