@@ -9,8 +9,7 @@ const useStyles = createUseStyles({
     },
     container: {
         borderLeft: '8px solid #78C0A8',
-        background: '#EDEDED',
-        width: '40ch',
+        maxWidth: '40ch',
         fontSize: '1.5rem',
         padding: '0.5em 1em',
     },
@@ -18,14 +17,14 @@ const useStyles = createUseStyles({
     blockquote: {
         fontStyle: 'italic',
         color: '#555555',
-        ':before': {
+        '&:before': {
             content: '"\\201C"',
             margin: '0 0.25em 0 -.75em',
             color: '#316a57',
         },
-        ':after': {
+        '&:after': {
             content: '"\\201D"',
-            margin: '0 0 0 0',
+            margin: '0',
             color: '#316a57',
         },
     },
