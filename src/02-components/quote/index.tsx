@@ -1,21 +1,21 @@
-import { css } from '@emotion/core';
 import React from 'react';
+import { createUseStyles } from 'react-jss';
 
-const styles = {
-    root: css({
+const useStyles = createUseStyles({
+    root: {
         display: 'flex',
         justifyContent: 'center',
         marginTop: '1rem',
-    }),
-    container: css({
+    },
+    container: {
         borderLeft: '8px solid #78C0A8',
         background: '#EDEDED',
         width: '40ch',
         fontSize: '1.5rem',
         padding: '0.5em 1em',
-    }),
+    },
 
-    blockquote: css({
+    blockquote: {
         fontStyle: 'italic',
         color: '#555555',
         ':before': {
@@ -28,28 +28,29 @@ const styles = {
             margin: '0 0 0 0',
             color: '#316a57',
         },
-    }),
-    author: css({
+    },
+    author: {
         color: '#333333',
         fontstyle: 'normal',
         fontWeight: 'bold',
         textAlign: 'right',
-    }),
-};
+    },
+});
 
-interface QuoteProps {
+type QuoteProps = {
     quote: string;
 
     author?: string;
-}
+};
 export const Quote = (props: QuoteProps) => {
     const { quote, author } = props;
+    const classes = useStyles();
 
     return (
-        <div css={styles.root}>
-            <div css={styles.container}>
-                <blockquote css={styles.blockquote}>{quote}</blockquote>
-                {author && <div css={styles.author}>- {author}</div>}
+        <div className={classes.root}>
+            <div className={classes.container}>
+                <blockquote className={classes.blockquote}>{quote}</blockquote>
+                {author && <div className={classes.author}>- {author}</div>}
             </div>
         </div>
     );
