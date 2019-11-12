@@ -29,10 +29,10 @@
         "test:watch": "jest --watch"
     },
     "dependencies": {
-        "@emotion/core": "^10.0.17",
         "react": "^16.9.0",
         "react-dom": "^16.9.0",
         "react-helmet": "^5.2.1",
+        "react-jss": "^10.0.0",
         "ts-optchain": "^0.1.8"
     },
     "devDependencies": {
@@ -41,7 +41,6 @@
         "@babel/plugin-proposal-class-properties": "^7.5.5",
         "@babel/preset-react": "^7.0.0",
         "@babel/preset-typescript": "^7.6.0",
-        "@emotion/babel-preset-css-prop": "^10.0.17",
         "@semantic-release/changelog": "^3.0.4",
         "@semantic-release/git": "^7.0.16",
         "@storybook/addon-actions": "^5.2.0",
@@ -58,7 +57,6 @@
         "@types/prettier": "^1.18.2",
         "@types/react": "^16.9.2",
         "@types/react-helmet": "^5.0.10",
-        "@types/storybook__addon-knobs": "^5.0.3",
         "@types/storybook__react": "^4.0.2",
         "@typescript-eslint/eslint-plugin": "^2.2.0",
         "@typescript-eslint/parser": "^2.2.0",
@@ -88,6 +86,7 @@
         "ts-jest": "^24.1.0",
         "ts-node": "^8.4.1",
         "typescript": "^3.6.3",
+        "webpack": "^4.41.2",
         "yalc": "^1.0.0-pre.34",
         "yarn-deduplicate": "^1.1.1"
     },

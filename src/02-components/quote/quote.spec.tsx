@@ -11,7 +11,7 @@ describe('<Quote />', () => {
      * Render tests.
      */
     it('should render quote if author is missing', async () => {
-        const { getByText } = render(<Quote quote={quote} author={author} />);
+        const { getByText } = render(<Quote quote={quote} />);
         const quoteElement = getByText(content => {
             return content === quote;
         });

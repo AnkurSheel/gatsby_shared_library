@@ -10,6 +10,7 @@ module.exports = ({ config }) => {
                     cacheDirectory: true,
                 },
             },
+            require.resolve('react-docgen-typescript-loader'),
         ],
     });
 
