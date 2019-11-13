@@ -14,6 +14,11 @@ module.exports = {
             plugins: ['@babel/proposal-class-properties', '@babel/proposal-object-rest-spread'],
             sourceMaps: 'inline',
         },
+        test: {
+            presets: [['@babel/env', { modules: 'commonjs' }], '@babel/react', '@babel/typescript'],
+            plugins: ['@babel/proposal-class-properties', '@babel/proposal-object-rest-spread'],
+            sourceMaps: 'inline',
+        },
     },
     ignore: [
         '**/__tests__', // ignore all test directories leave this up to ts-jest

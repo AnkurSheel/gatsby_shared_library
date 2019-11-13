@@ -8,6 +8,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'prettier/react',
         'plugin:jest/recommended',
+        'plugin:jsx-a11y/recommended',
     ],
     settings: {
         react: {
@@ -39,7 +40,10 @@ module.exports = {
                 extensions: ['jsx', 'tsx'],
             },
         ],
-        'import/no-extraneous-dependencies': ['error', { devDependencies: ['**/*.stories.tsx', '**/*.spec.tsx'] }],
+        'import/no-extraneous-dependencies': [
+            'error',
+            { devDependencies: ['**/*.stories.tsx', '**/__tests__/**/*.[jt]s?(x)'] },
+        ],
     },
     overrides: [
         // Override some TypeScript rules just for .js files

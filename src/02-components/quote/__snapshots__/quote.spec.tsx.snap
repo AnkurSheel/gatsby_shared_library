@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Quote /> snapshot 1`] = `
+<div>
+  <div
+    class="root-0-2-1"
+  >
+    <div
+      class="container-0-2-2"
+    >
+      <blockquote
+        class="blockquote-0-2-3"
+      >
+        Test Quote here
+      </blockquote>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Quote /> snapshot 2`] = `
+".root-0-2-1 {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.container-0-2-2 {
+  padding: 0.5em 1em;
+  font-size: 1.5rem;
+  max-width: 40ch;
+  border-left: 8px solid #78C0A8;
+}
+.blockquote-0-2-3 {
+  color: #555555;
+  font-style: italic;
+}
+.blockquote-0-2-3:before {
+  color: #316a57;
+  margin: 0 0.25em 0 -.75em;
+  content: \\"\\\\201C\\";
+}
+.blockquote-0-2-3:after {
+  color: #316a57;
+  margin: 0;
+  content: \\"\\\\201D\\";
+}
+.author-0-2-4 {
+  color: #333333;
+  fontstyle: normal;
+  text-align: right;
+  font-weight: bold;
+}"
+`;

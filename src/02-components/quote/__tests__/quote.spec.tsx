@@ -1,7 +1,8 @@
 import React from 'react';
 import { axe } from 'jest-axe';
 import { render } from '@testing-library/react';
-import Quote from '.';
+import { JssProvider, SheetsRegistry } from 'react-jss';
+import Quote from '..';
 
 describe('<Quote />', () => {
     const quote = 'Test Quote here';
@@ -45,5 +46,16 @@ describe('<Quote />', () => {
         const { container } = render(<Quote quote={quote} />);
         const actual = await axe(container);
         expect(actual).toHaveNoViolations();
+    });
+
+    it('snapshot', async () => {
+        const sheets = new SheetsRegistry();
+        const { container } = render(
+            <JssProvider registry={sheets}>
+                <Quote quote={quote} />
+            </JssProvider>
+        );
+        expect(container).toMatchSnapshot();
+        expect(sheets.toString()).toMatchSnapshot();
     });
 });
