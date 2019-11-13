@@ -22,4 +22,5 @@ module.exports = {
         ],
     ],
     preset: 'ts-jest',
+    snapshotResolver: './jest.snapshot-resolver.js',
 };
