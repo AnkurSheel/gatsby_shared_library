@@ -25,7 +25,7 @@
         "semantic-release": "semantic-release",
         "commit": "yarn git-cz",
         "deduplicate": "yarn-deduplicate --list && yarn-deduplicate",
-        "test": "jest",
+        "test": "cross-env BABEL_ENV=test jest",
         "test:watch": "jest --watch"
     },
     "dependencies": {
