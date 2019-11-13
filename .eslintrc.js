@@ -8,6 +8,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'prettier/react',
         'plugin:jest/recommended',
+        'plugin:jsx-a11y/recommended',
     ],
     settings: {
         react: {
