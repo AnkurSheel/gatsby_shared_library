@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.3.0...v1.4.0) (2019-12-15)
+
+
+### Features
+
+* add video component ([e56c257](https://github.com/AnkurSheel/gatsby_shared_library/commit/e56c2574202d58ab5bb5d263f6d399c8fb0ba679))
+
 # [1.3.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.2.1...v1.3.0) (2019-11-04)
 
 
