@@ -16,3 +16,4 @@ Common components to be used between multiple gatsby blogs
 
 -   Quote
 -   SEO
+-   Video
