@@ -32,4 +32,4 @@ jobs:
             displayName: Version and Tag
             env:
                 GH_TOKEN: $(gh.token)
-                yarn_TOKEN: $(yarn.token)
+                NPM_TOKEN: $(npm.token)
