@@ -19,6 +19,9 @@ jobs:
           - script: yarn build
             displayName: Build Package
 
+          - script: yarn lint
+            displayName: Linter
+
           - script: yarn test
             displayName: Unit Tests
 
