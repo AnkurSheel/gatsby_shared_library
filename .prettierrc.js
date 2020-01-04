@@ -1,5 +1,5 @@
 module.exports = {
-    endOfLine: 'crlf',
+    endOfLine: 'auto',
     semi: true,
     singleQuote: true,
     tabWidth: 4,
