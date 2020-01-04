@@ -19,7 +19,7 @@ jobs:
           - script: yarn build
             displayName: Build Package
 
-          - script: yarn lint
+          - script: yarn format --check && yarn lint
             displayName: Linter
 
           - script: yarn test
