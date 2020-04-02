@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.4.0...v1.4.1) (2020-04-02)
+
+
+### Bug Fixes
+
+* fix broken tests ([a31b725](https://github.com/AnkurSheel/gatsby_shared_library/commit/a31b7253939aff876ba246478193c71624ff05a5))
+
 # [1.4.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.3.0...v1.4.0) (2019-12-15)
 
 
