@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.4.1...v1.5.0) (2020-04-02)
+
+
+### Features
+
+* allow overriding of quote colours ([d2850ab](https://github.com/AnkurSheel/gatsby_shared_library/commit/d2850abc2cbad0b8648e51ccf5a1b7d38c389aaa))
+
 ## [1.4.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.4.0...v1.4.1) (2020-04-02)
 
 
