@@ -920,6 +920,11 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@codinators/eslint-config@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@codinators/eslint-config/-/eslint-config-1.0.0.tgz#78a3c4bb45a5559226ac7a07d962c6b558fcfdc0"
+  integrity sha512-pCyVtIhfnRut5GMBh8uDqvvnhP42OYM4bnmkknyd/MffO7IFFwMjncr2uOIX2srqCNntGmHDSHIwxV6tQrtELg==
+
 "@commitlint/execute-rule@^8.3.4":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@commitlint/execute-rule/-/execute-rule-8.3.4.tgz#1b63f0713b197889d90b76f9eea1abc010d256b1"
