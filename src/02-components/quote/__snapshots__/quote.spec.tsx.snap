@@ -6,10 +6,10 @@ exports[`<Quote /> snapshot 1`] = `
     class="root-0-2-1"
   >
     <div
-      class="container-0-2-2"
+      class="container-0-2-2 container-d0-0-2-5"
     >
       <blockquote
-        class="blockquote-0-2-3"
+        class="blockquote-0-2-3 blockquote-d1-0-2-6"
       >
         Test Quote here
       </blockquote>
@@ -28,26 +28,38 @@ exports[`<Quote /> snapshot 2`] = `
   padding: 0.5em 1em;
   font-size: 1.5rem;
   max-width: 40ch;
-  border-left: 8px solid #78C0A8;
+  border-left-style: solid;
+  border-left-width: 0.5em;
 }
 .blockquote-0-2-3 {
-  color: #555555;
   font-style: italic;
 }
 .blockquote-0-2-3:before {
-  color: #316a57;
   margin: 0 0.25em 0 -.75em;
   content: \\"\\\\201C\\";
 }
 .blockquote-0-2-3:after {
-  color: #316a57;
   margin: 0;
   content: \\"\\\\201D\\";
 }
 .author-0-2-4 {
-  color: #333333;
   fontstyle: normal;
   text-align: right;
   font-weight: bold;
+}
+.container-d0-0-2-5 {
+  border-left-color: #78C0A8;
+}
+.blockquote-d1-0-2-6 {
+  color: #555555;
+}
+.blockquote-d1-0-2-6:before {
+  color: #555555;
+}
+.blockquote-d1-0-2-6:after {
+  color: #555555;
+}
+.author-d2-0-2-7 {
+  color: #333333;
 }"
 `;
