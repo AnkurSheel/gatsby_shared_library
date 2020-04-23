@@ -32,6 +32,7 @@ exports[`<Quote /> snapshot 2`] = `
   border-left-width: 0.5em;
 }
 .blockquote-0-2-3 {
+  margin: .75em 1.5em;
   font-style: italic;
 }
 .blockquote-0-2-3:before {

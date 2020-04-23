@@ -26,6 +26,7 @@ const useStyles = createUseStyles<QuoteProps>({
 
     blockquote: {
         fontStyle: 'italic',
+        margin: '.75em 1.5em',
         color: (props: QuoteProps) => props.quoteColor || '#555555',
         '&:before': {
             content: '"\\201C"',
