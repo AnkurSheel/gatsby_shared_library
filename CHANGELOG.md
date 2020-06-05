@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.5.1...v1.5.2) (2020-06-05)
+
+
+### Bug Fixes
+
+* version bump for update packages ([b9b56a5](https://github.com/AnkurSheel/gatsby_shared_library/commit/b9b56a5d0dcddfae9ab637c13859e1cfcbae450f))
+
 ## [1.5.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.5.0...v1.5.1) (2020-04-23)
 
 
