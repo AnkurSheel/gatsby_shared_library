@@ -31,7 +31,6 @@
     "dependencies": {
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
-        "react-helmet": "^5.2.1",
         "react-jss": "^10.1.1",
         "ts-optchain": "^0.1.8"
     },
