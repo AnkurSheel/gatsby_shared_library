@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-prop-types */
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 
@@ -27,20 +28,20 @@ const useStyles = createUseStyles<QuoteProps>({
     blockquote: {
         fontStyle: 'italic',
         margin: '.75em 1.5em',
-        color: (props: QuoteProps) => props.quoteColor || '#555555',
+        color: (props: QuoteProps) => props.quoteColor,
         '&:before': {
             content: '"\\201C"',
             margin: '0 0.25em 0 -.75em',
-            color: (props: QuoteProps) => props.quoteColor || '#555555',
+            color: (props: QuoteProps) => props.quoteColor,
         },
         '&:after': {
             content: '"\\201D"',
             margin: '0',
-            color: (props: QuoteProps) => props.quoteColor || '#555555',
+            color: (props: QuoteProps) => props.quoteColor,
         },
     },
     author: {
-        color: (props: QuoteProps) => props.authorColor || '#333333',
+        color: (props: QuoteProps) => props.authorColor,
         fontstyle: 'normal',
         fontWeight: 'bold',
         textAlign: 'right',
@@ -59,6 +60,13 @@ export const Quote = (props: QuoteProps) => {
             </div>
         </div>
     );
+};
+
+Quote.defaultProps = {
+    author: null,
+    quoteColor: '#555555',
+    borderColor: '#78C0A8',
+    authorColor: '#333333',
 };
 
 export default Quote;
