@@ -1,3 +1,17 @@
+# [1.6.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.5.2...v1.6.0) (2020-09-01)
+
+
+### Bug Fixes
+
+* fix broken build ([2d0748a](https://github.com/AnkurSheel/gatsby_shared_library/commit/2d0748a2447963a3ecbe773af5fea327b02843f3))
+* fix linter errors ([433f337](https://github.com/AnkurSheel/gatsby_shared_library/commit/433f3376909c4348dafc708f0d6077fc4a94ede5))
+* upgrade deps ([909c491](https://github.com/AnkurSheel/gatsby_shared_library/commit/909c491976b3e7945d97eb17cdcf16cf0d7c4f9e))
+
+
+### Features
+
+* remove SEO component ([276e295](https://github.com/AnkurSheel/gatsby_shared_library/commit/276e29571de3e5da9c07a8d6a1fd5017b3a6829f))
+
 ## [1.5.2](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.5.1...v1.5.2) (2020-06-05)
 
 
