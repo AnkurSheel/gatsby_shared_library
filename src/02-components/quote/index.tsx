@@ -51,8 +51,8 @@ const useStyles = createUseStyles({
 });
 
 export const Quote = (props: QuoteProps) => {
-    const { quote, author } = props;
     const classes = useStyles(props);
+    const { quote, author } = props;
 
     return (
         <div className={classes.root}>

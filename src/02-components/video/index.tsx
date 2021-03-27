@@ -25,8 +25,8 @@ type VideoProps = {
 };
 
 export const Video = (props: VideoProps) => {
-    const { src, title } = props;
     const classes = useStyles();
+    const { src, title } = props;
 
     return (
         <div className={classes.wrapper}>

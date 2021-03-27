@@ -1,5 +1,5 @@
 module.exports = {
-    extends: ['@codinators/eslint-config', 'plugin:jest/recommended'],
+    extends: ['@codinators/eslint-config', 'plugin:jest/recommended', 'plugin:react-hooks/recommended'],
     rules: {
         'import/no-extraneous-dependencies': [
             'error',
