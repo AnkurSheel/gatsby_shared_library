@@ -1,3 +1,10 @@
+## [1.6.2](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.6.1...v1.6.2) (2021-03-27)
+
+
+### Bug Fixes
+
+* attempt to fix hooks error ([dcb752f](https://github.com/AnkurSheel/gatsby_shared_library/commit/dcb752f0a49673ee3b5c1edfc51615cbe34f4401))
+
 ## [1.6.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.6.0...v1.6.1) (2021-03-27)
 
 
