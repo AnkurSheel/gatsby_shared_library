@@ -21,7 +21,7 @@
         "lint": "eslint . --ext ts --ext tsx --ext js --ext jsx",
         "lint:fix": "yarn lint --fix",
         "storybook": "cross-env BABEL_ENV=storybook start-storybook -s public",
-        "build-storybook": "cross-env BABEL_ENV=storybook build-storybook -s public",
+        "build-storybook": "cross-env BABEL_ENV=storybook build-storybook",
         "semantic-release": "semantic-release",
         "commit": "yarn git-cz",
         "deduplicate": "yarn-deduplicate --list && yarn-deduplicate",
