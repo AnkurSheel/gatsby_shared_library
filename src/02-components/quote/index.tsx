@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unused-prop-types */
+/* eslint-disable no-use-before-define */
+
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 
@@ -10,7 +12,7 @@ type QuoteProps = {
     authorColor?: string;
 };
 
-const useStyles = createUseStyles<QuoteProps>({
+const useStyles = createUseStyles({
     root: {
         display: 'flex',
         justifyContent: 'center',

@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import React from 'react';
 import { axe } from 'jest-axe';
 import { render } from '@testing-library/react';
@@ -13,28 +14,20 @@ describe('<Quote />', () => {
      */
     it('should render quote if author is missing', async () => {
         const { getByText } = render(<Quote quote={quote} />);
-        const quoteElement = getByText((content) => {
-            return content === quote;
-        });
+        const quoteElement = getByText((content) => content === quote);
         expect(quoteElement).not.toBeNull();
     });
 
     it('should not render author if author is missing', async () => {
         const { queryByText } = render(<Quote quote={quote} author={author} />);
-        const authorElement = queryByText((content) => {
-            return content === author;
-        });
+        const authorElement = queryByText((content) => content === author);
         expect(authorElement).toBeNull();
     });
 
     it('should render quote and author', async () => {
         const { getByText } = render(<Quote quote={quote} author={author} />);
-        const quoteElement = getByText((content) => {
-            return content === quote;
-        });
-        const authorElement = getByText((content) => {
-            return content === `- ${author}`;
-        });
+        const quoteElement = getByText((content) => content === quote);
+        const authorElement = getByText((content) => content === `- ${author}`);
         expect(quoteElement).not.toBeNull();
         expect(authorElement).not.toBeNull();
     });
