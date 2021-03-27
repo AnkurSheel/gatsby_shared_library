@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.6.0...v1.6.1) (2021-03-27)
+
+
+### Bug Fixes
+
+* remove type from createUseStyles ([8623ed8](https://github.com/AnkurSheel/gatsby_shared_library/commit/8623ed8e6c5b8a062bcf5ca18ab5861a64cb7e4a))
+
 # [1.6.0](https://github.com/AnkurSheel/gatsby_shared_library/compare/v1.5.2...v1.6.0) (2020-09-01)
 
 
